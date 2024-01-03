@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Download Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <script defer src="dark-mode.js"></script>
+</head>
+<body>
+
+    <h1>File Download</h1>
+
+    <form id="downloadForm" onsubmit="event.preventDefault(); downloadFile()">
+        <label for="fileName">Enter File Name:</label>
+        <input type="text" id="fileName" name="fileName" placeholder="Enter file name">
+        <button type="button" onclick="downloadFile()">Download File</button>
+    </form>
+
+    <button id="darkModeToggle">Toggle Dark Mode</button>
+
+</body>
+</html>
